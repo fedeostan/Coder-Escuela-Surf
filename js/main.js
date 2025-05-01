@@ -1,5 +1,47 @@
+// Language handling
+let currentLang = localStorage.getItem('language') || 'en';
+
+function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('language', lang);
+    updateContent();
+}
+
+function updateContent() {
+    // Update all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const keys = element.getAttribute('data-i18n').split('.');
+        let value = translations[currentLang];
+        for (const key of keys) {
+            value = value[key];
+        }
+        if (element.tagName === 'INPUT' && element.type === 'placeholder') {
+            element.placeholder = value;
+        } else {
+            element.textContent = value;
+        }
+    });
+
+    // Update HTML lang attribute
+    document.documentElement.lang = currentLang;
+}
+
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize language
+    updateContent();
+
+    // Language switcher
+    const langSwitcher = document.querySelector('.language-switcher');
+    if (langSwitcher) {
+        langSwitcher.addEventListener('click', (e) => {
+            const newLang = e.target.getAttribute('data-lang');
+            if (newLang) {
+                setLanguage(newLang);
+            }
+        });
+    }
+
     // Initialize all tooltips
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

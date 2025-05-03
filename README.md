@@ -1,28 +1,31 @@
-# Surf School Website
+# Escuela de Surf Website
 
-A modern, responsive website for a surf school featuring class bookings, instructor profiles, and real-time surf conditions.
+A modern, responsive website for a surf school featuring class details, instructor profiles, scheduling information, and contact options.
 
 ## Features
 
-- Responsive design using Bootstrap 5
-- Real-time surf conditions integration
-- Class booking system
+- Responsive design
+- Class descriptions and information
 - Instructor profiles
-- Photo gallery
-- Testimonials
+- Class schedule
 - Contact form
-- FAQ section
+- Dynamic navigation
+- Modern, clean UI
 
 ## Project Structure
 
 ```
 ├── index.html              # Main landing page
-├── styles/                 # CSS stylesheets
-│   └── main.css           # Main stylesheet
+├── classes.html           # Classes information page
+├── instructors.html       # Instructor profiles page
+├── schedule.html          # Class schedule page
+├── contact.html           # Contact information page
+├── styles/                # CSS stylesheets
+│   └── unified.css        # Unified stylesheet for all pages
 ├── js/                    # JavaScript files
-│   └── main.js           # Main JavaScript file
-├── images/               # Image assets
-└── README.md            # Project documentation
+│   └── main.js            # Main JavaScript file
+├── images/                # Image assets
+└── README.md              # Project documentation
 ```
 
 ## Setup
@@ -36,8 +39,7 @@ A modern, responsive website for a surf school featuring class bookings, instruc
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
-- Windguru API (for surf conditions)
+- Responsive design principles
 
 ## Development
 

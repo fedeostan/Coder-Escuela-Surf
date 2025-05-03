@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our surf classes for all levels. From beginners to advanced surfers, we have the perfect program for you.">
+    <meta name="keywords" content="surf classes, surf lessons, beginner surf, intermediate surf, private surf lessons">
+    <title>Surf Classes - Escuela de Surf</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/unified.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Escuela de Surf</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html" class="active">Classes</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1>Our Surf Classes</h1>
+            <p>Discover the perfect wave with our expert instructors</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>Available Programs</h2>
+                <div class="features-grid">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Beginner Classes</h3>
+                            <p>Perfect for first-time surfers. Learn the basics of surfing in a safe and fun environment.</p>
+                            <a href="schedule.html" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Intermediate Classes</h3>
+                            <p>Take your skills to the next level with advanced techniques and wave reading.</p>
+                            <a href="schedule.html" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Private Lessons</h3>
+                            <p>One-on-one instruction tailored to your specific needs and goals.</p>
+                            <a href="schedule.html" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h5>Escuela de Surf</h5>
+                    <p>Learn to surf with the best instructors in a safe and fun environment.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Escuela de Surf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

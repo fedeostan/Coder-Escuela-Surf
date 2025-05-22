@@ -232,7 +232,7 @@ section .container.text-center .cta-buttons {
   margin-top: -76px;
 }
 .hero-section h1 {
-  color: var(--soft-white);
+  color: #F7F7F7;
   margin-bottom: var(--space-md);
   text-shadow: none;
   font-weight: 700;
@@ -894,4 +894,4 @@ footer hr {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

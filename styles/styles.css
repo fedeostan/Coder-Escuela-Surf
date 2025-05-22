@@ -152,7 +152,7 @@ section .container.text-center .cta-buttons {
   transition: background-color var(--transition-normal), padding var(--transition-normal);
 }
 .navbar-scrolled {
-  background-color: rgba(247, 247, 247, 0.95);
+  background-color: rgba(18, 18, 18, 0.95);
   padding: 0.75rem 0;
   backdrop-filter: blur(10px);
 }
@@ -768,7 +768,7 @@ footer hr {
   transform: translateY(-50%) rotate(45deg);
 }
 .faq-question:hover {
-  background-color: rgba(247, 247, 247, 0.8);
+  background-color: rgba(18, 18, 18, 0.8);
 }
 
 .faq-answer {

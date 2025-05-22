@@ -1,14 +1,14 @@
 /* Modern Minimalist Surf School Design */
 
 // Variables
-$soft-white: #F7F7F7;
-$soft-black: #1A1A1A;
-$gray-light: #B0B0B0;
-$gray-medium: #888888;
-$gray-dark: #333333;
-$accent-color: #666666;
-$ocean-blue: #1a73e8;
-$ocean-dark: #0d47a1;
+// Using dark mode colors as default
+$soft-white: #121212;
+$soft-black: #F7F7F7;
+$gray-light: #888888;
+$gray-dark: #CCCCCC;
+$accent-color: #9E9E9E;
+$ocean-blue: #64B5F6;
+$ocean-dark: #90CAF9;
 
 $font-primary: 'Inter', 'Helvetica Neue', sans-serif;
 $font-size-small: 0.875rem;
@@ -35,12 +35,6 @@ $z-fixed: 100;
 $z-modal: 1000;
 
 // Mixins
-@mixin dark-mode {
-  @media (prefers-color-scheme: dark) {
-    @content;
-  }
-}
-
 @mixin responsive($breakpoint) {
   @if $breakpoint == large {
     @media screen and (min-width: 993px) {
@@ -103,17 +97,6 @@ $z-modal: 1000;
   --z-tooltip: #{$z-tooltip};
   --z-fixed: #{$z-fixed};
   --z-modal: #{$z-modal};
-}
-
-/* Dark Mode Theming */
-@include dark-mode {
-  :root {
-    --soft-white: #121212;
-    --soft-black: #F7F7F7;
-    --gray-light: #888888;
-    --gray-dark: #CCCCCC;
-    --accent-color: #9E9E9E;
-  }
 }
 
 /* Typography */
@@ -236,7 +219,7 @@ section {
   transition: background-color var(--transition-normal), padding var(--transition-normal);
   
   &-scrolled {
-    background-color: rgba(26, 26, 26, 0.95);
+    background-color: rgba(247, 247, 247, 0.95);
     padding: 0.75rem 0;
     backdrop-filter: blur(10px);
   }
@@ -519,7 +502,7 @@ section {
 
 select.form-control {
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231A1A1A' viewBox='0 0 16 16'%3E%3Cpath d='M8 10.5a.5.5 0 0 1-.354-.146l-4-4a.5.5 0 0 1 .708-.708L8 9.293l3.646-3.647a.5.5 0 0 1 .708.708l-4 4A.5.5 0 0 1 8 10.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23F7F7F7' viewBox='0 0 16 16'%3E%3Cpath d='M8 10.5a.5.5 0 0 1-.354-.146l-4-4a.5.5 0 0 1 .708-.708L8 9.293l3.646-3.647a.5.5 0 0 1 .708.708l-4 4A.5.5 0 0 1 8 10.5z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding-right: 50px;
@@ -720,44 +703,6 @@ footer {
 .mb-4 { margin-bottom: var(--space-lg); }
 .mb-5 { margin-bottom: var(--space-xl); }
 
-/* Dark Mode Styles */
-.dark-mode {
-  --soft-white: #121212;
-  --soft-black: #F7F7F7;
-  --gray-light: #888888;
-  --gray-dark: #CCCCCC;
-  --accent-color: #9E9E9E;
-  --ocean-blue: #64B5F6;
-  --ocean-dark: #90CAF9;
-}
-
-.dark-mode-toggle {
-  background: none;
-  border: none;
-  color: var(--soft-white);
-  font-size: 1.2rem;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  margin-left: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color var(--transition-fast);
-  
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .sun,
-  .moon {
-    font-size: 1.2rem;
-    line-height: 1;
-  }
-}
-
 /* Notification System */
 .notification {
   position: fixed;
@@ -912,7 +857,7 @@ footer {
   }
   
   &:hover {
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: rgba(247, 247, 247, 0.8);
   }
 }
 

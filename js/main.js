@@ -363,6 +363,10 @@ function updateSurfConditions(data) {
   if (!DOM.conditionsWidget) return;
   
   DOM.conditionsWidget.innerHTML = `
+    <button class="hover-refresh-btn" type="button" aria-label="Refresh surf conditions">
+      <svg viewBox="0 0 24 24"><path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z"></path></svg>
+      Refresh
+    </button>
     <h3>Current Surf Conditions</h3>
     <div class="wave-height">${data.waveHeight}</div>
     <div class="conditions-details">
@@ -371,11 +375,10 @@ function updateSurfConditions(data) {
       <p><svg class="icon" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"></path></svg> Conditions: ${data.conditions}</p>
       <p class="text-muted update-time">Updated: ${data.updatedAt}</p>
     </div>
-    <button class="btn btn-outline-primary refresh-conditions">Refresh</button>
   `;
   
-  // Add refresh button listener
-  DOM.conditionsWidget.querySelector('.refresh-conditions').addEventListener('click', fetchSurfConditions);
+  // Add hover refresh button listener
+  DOM.conditionsWidget.querySelector('.hover-refresh-btn').addEventListener('click', fetchSurfConditions);
 }
 
 /**

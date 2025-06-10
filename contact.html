@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Escuela de Surf. Get in touch with our team for any questions about surf classes, schedules, or private lessons.">
-    <meta name="keywords" content="contact surf school, surf school contact, surf lessons contact, surf class information">
+    <meta name="description" content="Contact Escuela de Surf. Get in touch with our team for any questions about surf classes, schedules, or private lessons. Located at 123 Beach Road, Coastal City.">
+    <meta name="keywords" content="contact surf school, surf school contact, surf lessons contact, surf class information, surf school location, beach road surf school">
+    <meta name="author" content="Escuela de Surf">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us - Escuela de Surf">
+    <meta property="og:description" content="Get in touch with Escuela de Surf. Professional surf school located at 123 Beach Road, Coastal City. Contact us for surf classes and private lessons.">
+    <meta property="og:image" content="/images/og-surf-contact.jpg">
+    <meta property="og:url" content="https://escueladesurf.com/contact.html">
+    <meta property="og:site_name" content="Escuela de Surf">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@escueladesurf">
+    <meta name="twitter:title" content="Contact Us - Escuela de Surf">
+    <meta name="twitter:description" content="Get in touch with Escuela de Surf. Professional surf school for all levels.">
+    <meta name="twitter:image" content="/images/twitter-surf-contact.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://escueladesurf.com/contact.html">
+    
     <title>Contact Us - Escuela de Surf</title>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
     
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -36,11 +66,11 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section">
+    <!-- Page Header -->
+    <header class="page-header">
         <div class="container">
-            <h1 class="animate-on-scroll">Contact Us</h1>
-            <p class="animate-on-scroll">Get in touch with our team</p>
+            <h1>Contact Us</h1>
+            <p class="page-description">Get in touch with our team for any questions or to book your surf adventure</p>
         </div>
     </header>
 
@@ -88,32 +118,72 @@
         <section class="bg-light">
             <div class="container">
                 <h2>Send us a Message</h2>
-                <form id="contact-form" class="card animate-on-scroll">
+                <form id="contact-form" class="card animate-on-scroll" novalidate aria-labelledby="contact-form-title">
                     <div class="card-body">
+                        <h3 id="contact-form-title" class="sr-only">Contact Form</h3>
                         <div class="form-floating">
-                            <input type="text" id="contact-name" name="name" class="form-control" placeholder=" " required>
-                            <label for="contact-name">Your Name</label>
+                            <input type="text" 
+                                   id="contact-name" 
+                                   name="name" 
+                                   class="form-control" 
+                                   placeholder=" " 
+                                   required 
+                                   aria-describedby="name-help name-error"
+                                   autocomplete="name">
+                            <label for="contact-name">Your Name <span class="required" aria-label="required">*</span></label>
+                            <span id="name-help" class="form-help">Please enter your full name</span>
+                            <span id="name-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
                         <div class="form-floating">
-                            <input type="email" id="contact-email" name="email" class="form-control" placeholder=" " required>
-                            <label for="contact-email">Email Address</label>
+                            <input type="email" 
+                                   id="contact-email" 
+                                   name="email" 
+                                   class="form-control" 
+                                   placeholder=" " 
+                                   required 
+                                   aria-describedby="email-help email-error"
+                                   autocomplete="email">
+                            <label for="contact-email">Email Address <span class="required" aria-label="required">*</span></label>
+                            <span id="email-help" class="form-help">We'll use this to respond to your message</span>
+                            <span id="email-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
                         <div class="form-floating">
-                            <select id="contact-subject" name="subject" class="form-control" required>
-                                <option value="" selected disabled>Please select</option>
+                            <select id="contact-subject" 
+                                    name="subject" 
+                                    class="form-control" 
+                                    required 
+                                    aria-describedby="subject-help subject-error">
+                                <option value="" selected disabled>Please select a subject</option>
                                 <option value="general">General Inquiry</option>
                                 <option value="booking">Booking Information</option>
                                 <option value="private">Private Lessons</option>
                                 <option value="feedback">Feedback</option>
                                 <option value="other">Other</option>
                             </select>
-                            <label for="contact-subject">Subject</label>
+                            <label for="contact-subject">Subject <span class="required" aria-label="required">*</span></label>
+                            <span id="subject-help" class="form-help">Choose the topic that best describes your inquiry</span>
+                            <span id="subject-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
                         <div class="form-floating">
-                            <textarea id="contact-message" name="message" class="form-control" placeholder=" " rows="5" required></textarea>
-                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" 
+                                      name="message" 
+                                      class="form-control" 
+                                      placeholder=" " 
+                                      rows="5" 
+                                      required 
+                                      aria-describedby="message-help message-error"
+                                      minlength="10"
+                                      maxlength="1000"></textarea>
+                            <label for="contact-message">Your Message <span class="required" aria-label="required">*</span></label>
+                            <span id="message-help" class="form-help">Please provide details about your inquiry (10-1000 characters)</span>
+                            <span id="message-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-gradient">Send Message</button>
+                        <button type="submit" 
+                                class="btn btn-primary btn-gradient" 
+                                aria-describedby="submit-help">
+                            Send Message
+                        </button>
+                        <span id="submit-help" class="form-help">Your message will be sent to our team and we'll respond within 24 hours</span>
                     </div>
                 </form>
             </div>
@@ -129,7 +199,9 @@
                             height="450" 
                             style="border:0;" 
                             allowfullscreen="" 
-                            loading="lazy">
+                            loading="lazy"
+                            title="Google Maps showing Escuela de Surf location at 123 Beach Road, Coastal City"
+                            aria-label="Interactive map showing the location of Escuela de Surf">
                     </iframe>
                 </div>
             </div>
@@ -192,6 +264,59 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Escuela de Surf",
+      "description": "Professional surf school offering lessons for all levels with certified instructors",
+      "@id": "https://escueladesurf.com",
+      "url": "https://escueladesurf.com",
+      "telephone": "+1-555-123-4567",
+      "email": "info@escueladesurf.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Beach Road",
+        "addressLocality": "Coastal City",
+        "addressRegion": "CA",
+        "postalCode": "90210",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "34.0522",
+        "longitude": "-118.2437"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$",
+      "image": "https://escueladesurf.com/images/surf-school-exterior.jpg",
+      "sameAs": [
+        "https://www.facebook.com/escueladesurf",
+        "https://www.instagram.com/escueladesurf",
+        "https://www.twitter.com/escueladesurf"
+      ],
+      "sport": "Surfing",
+      "areaServed": {
+        "@type": "City",
+        "name": "Coastal City"
+      }
+    }
+    </script>
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>

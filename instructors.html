@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet our team of professional surf instructors. Learn from experienced surfers with years of teaching experience.">
-    <meta name="keywords" content="surf instructors, surf teachers, professional surfers, surf coaching">
-    <title>Our Instructors - Escuela de Surf</title>
+    <meta name="description" content="Meet our team of certified professional surf instructors at Escuela de Surf. Learn from experienced surfers with 15+ years of teaching experience. Expert coaching for all levels.">
+    <meta name="keywords" content="surf instructors, surf teachers, professional surfers, surf coaching, certified surf instructors, experienced surf coaches, surf lessons teachers">
+    <meta name="author" content="Escuela de Surf">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Professional Surf Instructors - Escuela de Surf">
+    <meta property="og:description" content="Meet our team of certified professional surf instructors. Learn from experienced surfers with 15+ years of teaching experience at Escuela de Surf.">
+    <meta property="og:image" content="/images/og-surf-instructors.jpg">
+    <meta property="og:url" content="https://escueladesurf.com/instructors.html">
+    <meta property="og:site_name" content="Escuela de Surf">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@escueladesurf">
+    <meta name="twitter:title" content="Our Professional Surf Instructors - Escuela de Surf">
+    <meta name="twitter:description" content="Meet our team of certified professional surf instructors with years of experience teaching surfers of all levels.">
+    <meta name="twitter:image" content="/images/twitter-surf-instructors.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://escueladesurf.com/instructors.html">
+    
+    <title>Our Professional Surf Instructors - Escuela de Surf</title>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
     
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,64 +43,139 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Escuela de Surf</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="classes.html">Classes</a></li>
-                    <li><a href="instructors.html" class="active">Instructors</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" aria-label="Escuela de Surf - Go to homepage">Escuela de Surf</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <ul role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="classes.html" role="menuitem">Classes</a></li>
+                        <li role="none"><a href="instructors.html" class="active" role="menuitem" aria-current="page">Instructors</a></li>
+                        <li role="none"><a href="schedule.html" role="menuitem">Schedule</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container">
-            <h1>Meet Our Instructors</h1>
-            <p>Learn from the best in the business</p>
-        </div>
+        </nav>
     </header>
 
-    <main>
-        <section>
+    <!-- Main Content -->
+    <main id="main-content" role="main" tabindex="-1">
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
             <div class="container">
+                <h1 id="page-title">Meet Our Instructors</h1>
+                <p class="page-description">Learn from certified experts with years of experience in surf instruction</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="instructors-title">
+            <div class="container">
+                <h2 id="instructors-title" class="sr-only">Our Instructor Team</h2>
+                <div class="features-grid">
+                    <article class="card" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/John.jpg" 
+                             alt="John Martinez, Head Surf Instructor with 15+ years experience, smiling while holding a surfboard on the beach" 
+                             class="instructor-image"
+                             itemprop="image"
+                             loading="lazy">
+                        <div class="card-body">
+                            <h3 itemprop="name">John Martinez</h3>
+                            <p class="text-muted" itemprop="jobTitle">Head Instructor & Surf Coach</p>
+                            <div itemprop="description">
+                                <p><strong>Experience:</strong> 15+ years teaching surfers of all levels</p>
+                                <p><strong>Specializations:</strong> All levels, surf safety, wave reading</p>
+                                <p><strong>Certifications:</strong> ISA Level 2 Instructor, Lifeguard Certified</p>
+                                <p><strong>Languages:</strong> English, Spanish</p>
+                            </div>
+                            <a href="schedule.html" 
+                               class="btn btn-outline-primary" 
+                               aria-label="Book a surf lesson with John Martinez">
+                               Book with John
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/Mike.jpg" 
+                             alt="Mike Thompson, Senior Surf Instructor specializing in beginner and intermediate classes, standing on beach with surfboard" 
+                             class="instructor-image"
+                             itemprop="image"
+                             loading="lazy">
+                        <div class="card-body">
+                            <h3 itemprop="name">Mike Thompson</h3>
+                            <p class="text-muted" itemprop="jobTitle">Senior Instructor</p>
+                            <div itemprop="description">
+                                <p><strong>Experience:</strong> 10+ years in surf instruction</p>
+                                <p><strong>Specializations:</strong> Beginner & intermediate classes, surf fundamentals</p>
+                                <p><strong>Certifications:</strong> ISA Level 1 Instructor, First Aid Certified</p>
+                                <p><strong>Languages:</strong> English, Portuguese</p>
+                            </div>
+                            <a href="schedule.html" 
+                               class="btn btn-outline-primary" 
+                               aria-label="Book a surf lesson with Mike Thompson">
+                               Book with Mike
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="card" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/Sarah.jpg" 
+                             alt="Sarah Rodriguez, Advanced Surf Instructor and wave reading expert, demonstrating surf technique on beach" 
+                             class="instructor-image"
+                             itemprop="image"
+                             loading="lazy">
+                        <div class="card-body">
+                            <h3 itemprop="name">Sarah Rodriguez</h3>
+                            <p class="text-muted" itemprop="jobTitle">Advanced Instructor & Competition Coach</p>
+                            <div itemprop="description">
+                                <p><strong>Experience:</strong> 12+ years teaching advanced techniques</p>
+                                <p><strong>Specializations:</strong> Advanced surfing, wave reading, competition preparation</p>
+                                <p><strong>Certifications:</strong> ISA Level 2 Instructor, Professional Surfer</p>
+                                <p><strong>Languages:</strong> English, Spanish, French</p>
+                            </div>
+                            <a href="schedule.html" 
+                               class="btn btn-outline-primary" 
+                               aria-label="Book a surf lesson with Sarah Rodriguez">
+                               Book with Sarah
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructor Qualifications Section -->
+        <section class="bg-light" aria-labelledby="qualifications-title">
+            <div class="container">
+                <h2 id="qualifications-title">Why Choose Our Instructors?</h2>
                 <div class="features-grid">
                     <div class="card">
-                        <img src="images/John.jpg" alt="John - Head Instructor" class="instructor-image">
                         <div class="card-body">
-                            <h3>John</h3>
-                            <p class="text-muted">Head Instructor</p>
-                            <p>15+ years of experience teaching surfers of all levels</p>
-                            <a href="schedule.html" class="btn btn-outline-primary">Book with John</a>
+                            <h3>Certified Professionals</h3>
+                            <p>All our instructors hold ISA (International Surfing Association) certifications and maintain current lifeguard and first aid certifications.</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/Mike.jpg" alt="Mike - Senior Instructor" class="instructor-image">
                         <div class="card-body">
-                            <h3>Mike</h3>
-                            <p class="text-muted">Senior Instructor</p>
-                            <p>Specializes in beginner and intermediate classes</p>
-                            <a href="schedule.html" class="btn btn-outline-primary">Book with Mike</a>
+                            <h3>Extensive Experience</h3>
+                            <p>Combined, our team has over 40 years of surf instruction experience, teaching thousands of students from beginners to advanced surfers.</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/Sarah.jpg" alt="Sarah - Advanced Instructor" class="instructor-image">
                         <div class="card-body">
-                            <h3>Sarah</h3>
-                            <p class="text-muted">Advanced Instructor</p>
-                            <p>Expert in wave reading and advanced techniques</p>
-                            <a href="schedule.html" class="btn btn-outline-primary">Book with Sarah</a>
+                            <h3>Safety First</h3>
+                            <p>Every instructor prioritizes student safety with comprehensive knowledge of ocean conditions, weather patterns, and emergency procedures.</p>
                         </div>
                     </div>
                 </div>
@@ -78,18 +183,20 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
                     <h5>Escuela de Surf</h5>
                     <p>Learn to surf with the best instructors in a safe and fun environment.</p>
+                    <p>Email: <a href="mailto:info@escueladesurf.com" aria-label="Send email to Escuela de Surf">info@escueladesurf.com</a></p>
+                    <p>Phone: <a href="tel:+11234567890" aria-label="Call Escuela de Surf">(123) 456-7890</a></p>
                 </div>
                 <div class="footer-links">
                     <h5>Quick Links</h5>
                     <ul>
                         <li><a href="classes.html">Classes</a></li>
-                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="instructors.html" aria-current="page">Instructors</a></li>
                         <li><a href="schedule.html">Schedule</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -101,6 +208,50 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data for Instructors -->
+    <script type="application/ld+json">
+    [{
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "John Martinez",
+      "jobTitle": "Head Surf Instructor",
+      "description": "Professional surf instructor with 15+ years of experience teaching surfers of all levels. ISA Level 2 certified with specializations in surf safety and wave reading.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Escuela de Surf"
+      },
+      "knowsAbout": ["Surfing", "Ocean Safety", "Wave Reading", "Surf Instruction"],
+      "hasCredential": ["ISA Level 2 Instructor", "Lifeguard Certified"],
+      "speaks": ["English", "Spanish"]
+    }, {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mike Thompson",
+      "jobTitle": "Senior Surf Instructor",
+      "description": "Experienced surf instructor with 10+ years specializing in beginner and intermediate surf classes. ISA Level 1 certified with expertise in surf fundamentals.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Escuela de Surf"
+      },
+      "knowsAbout": ["Beginner Surfing", "Surf Fundamentals", "Intermediate Techniques"],
+      "hasCredential": ["ISA Level 1 Instructor", "First Aid Certified"],
+      "speaks": ["English", "Portuguese"]
+    }, {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sarah Rodriguez",
+      "jobTitle": "Advanced Surf Instructor & Competition Coach",
+      "description": "Expert surf instructor with 12+ years teaching advanced techniques and competition preparation. ISA Level 2 certified professional surfer.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Escuela de Surf"
+      },
+      "knowsAbout": ["Advanced Surfing", "Wave Reading", "Competition Preparation", "Professional Surfing"],
+      "hasCredential": ["ISA Level 2 Instructor", "Professional Surfer"],
+      "speaks": ["English", "Spanish", "French"]
+    }]
+    </script>
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>

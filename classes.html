@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our surf classes for all levels. From beginners to advanced surfers, we have the perfect program for you.">
-    <meta name="keywords" content="surf classes, surf lessons, beginner surf, intermediate surf, private surf lessons">
+    <meta name="description" content="Explore our comprehensive surf classes for all levels. From beginner to advanced programs, we offer expert instruction with professional equipment in a safe environment.">
+    <meta name="keywords" content="surf classes, surf lessons, beginner surf, intermediate surf, private surf lessons, surf school programs, professional surf coaching">
+    <meta name="author" content="Escuela de Surf">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Surf Classes - Escuela de Surf">
+    <meta property="og:description" content="Explore our comprehensive surf classes for all levels. From beginner to advanced programs, we offer expert instruction with professional equipment.">
+    <meta property="og:image" content="/images/og-surf-classes.jpg">
+    <meta property="og:url" content="https://escueladesurf.com/classes.html">
+    <meta property="og:site_name" content="Escuela de Surf">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@escueladesurf">
+    <meta name="twitter:title" content="Surf Classes - Escuela de Surf">
+    <meta name="twitter:description" content="Explore our comprehensive surf classes for all levels. From beginner to advanced programs, we offer expert instruction.">
+    <meta name="twitter:image" content="/images/twitter-surf-classes.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://escueladesurf.com/classes.html">
+    
     <title>Surf Classes - Escuela de Surf</title>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
     
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,59 +43,95 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Escuela de Surf</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="classes.html" class="active">Classes</a></li>
-                    <li><a href="instructors.html">Instructors</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" aria-label="Escuela de Surf - Go to homepage">Escuela de Surf</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <ul role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="classes.html" class="active" role="menuitem" aria-current="page">Classes</a></li>
+                        <li role="none"><a href="instructors.html" role="menuitem">Instructors</a></li>
+                        <li role="none"><a href="schedule.html" role="menuitem">Schedule</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container">
-            <h1>Our Surf Classes</h1>
-            <p>Discover the perfect wave with our expert instructors</p>
-        </div>
+        </nav>
     </header>
 
-    <main>
-        <section>
+    <!-- Main Content -->
+    <main id="main-content" role="main" tabindex="-1">
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
             <div class="container">
-                <h2>Available Programs</h2>
+                <h1 id="page-title">Our Surf Classes</h1>
+                <p class="page-description">Choose from our range of professional surf programs designed for every skill level</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="programs-title">
+            <div class="container">
+                <h2 id="programs-title">Available Programs</h2>
                 <div class="features-grid">
                     <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon" aria-hidden="true">🏄‍♂️</div>
+                            <div class="card-title">Beginner Classes</div>
+                            <div class="card-price">$75</div>
+                        </div>
                         <div class="card-body">
-                            <h3>Beginner Classes</h3>
-                            <p>Perfect for first-time surfers. Learn the basics of surfing in a safe and fun environment.</p>
-                            <a href="schedule.html" class="btn btn-outline-primary">Book Now</a>
+                            <p class="card-description">Perfect for first-time surfers. Learn the basics of surfing in a safe and fun environment with professional equipment provided.</p>
+                            <ul class="card-features">
+                                <li>2-hour group lessons</li>
+                                <li>Safety instruction included</li>
+                                <li>All equipment provided</li>
+                                <li>Maximum 6 students per instructor</li>
+                            </ul>
+                            <a href="schedule.html" class="card-button" aria-label="Book beginner surf class">Start Your Journey</a>
                         </div>
                     </div>
                     <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon" aria-hidden="true">🌊</div>
+                            <div class="card-title">Intermediate Classes</div>
+                            <div class="card-price">$85</div>
+                        </div>
                         <div class="card-body">
-                            <h3>Intermediate Classes</h3>
-                            <p>Take your skills to the next level with advanced techniques and wave reading.</p>
-                            <a href="schedule.html" class="btn btn-outline-primary">Book Now</a>
+                            <p class="card-description">Take your skills to the next level with advanced techniques and wave reading instruction from certified professionals.</p>
+                            <ul class="card-features">
+                                <li>2-hour focused sessions</li>
+                                <li>Wave reading techniques</li>
+                                <li>Advanced board handling</li>
+                                <li>Small group instruction</li>
+                            </ul>
+                            <a href="schedule.html" class="card-button" aria-label="Book intermediate surf class">Level Up</a>
                         </div>
                     </div>
                     <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon" aria-hidden="true">⭐</div>
+                            <div class="card-title">Private Lessons</div>
+                            <div class="card-price">$150</div>
+                        </div>
                         <div class="card-body">
-                            <h3>Private Lessons</h3>
-                            <p>One-on-one instruction tailored to your specific needs and goals.</p>
-                            <a href="schedule.html" class="btn btn-outline-primary">Book Now</a>
+                            <p class="card-description">One-on-one instruction tailored to your specific needs and goals with personalized coaching approach.</p>
+                            <ul class="card-features">
+                                <li>Customizable lesson length</li>
+                                <li>Personalized instruction</li>
+                                <li>Flexible scheduling</li>
+                                <li>All skill levels welcome</li>
+                            </ul>
+                            <a href="schedule.html" class="card-button" aria-label="Book private surf lesson">Go Private</a>
                         </div>
                     </div>
                 </div>
@@ -73,17 +139,19 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
                     <h5>Escuela de Surf</h5>
                     <p>Learn to surf with the best instructors in a safe and fun environment.</p>
+                    <p>Email: <a href="mailto:info@escueladesurf.com" aria-label="Send email to Escuela de Surf">info@escueladesurf.com</a></p>
+                    <p>Phone: <a href="tel:+11234567890" aria-label="Call Escuela de Surf">(123) 456-7890</a></p>
                 </div>
                 <div class="footer-links">
                     <h5>Quick Links</h5>
                     <ul>
-                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="classes.html" aria-current="page">Classes</a></li>
                         <li><a href="instructors.html">Instructors</a></li>
                         <li><a href="schedule.html">Schedule</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -96,6 +164,69 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data for Courses -->
+    <script type="application/ld+json">
+    [{
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Beginner Surf Lessons",
+      "description": "Perfect for first-time surfers. Learn the basics of surfing in a safe and fun environment with professional equipment provided.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Escuela de Surf",
+        "url": "https://escueladesurf.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "75",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "courseMode": "in-person",
+      "duration": "PT2H",
+      "instructor": {
+        "@type": "Organization",
+        "name": "Escuela de Surf"
+      }
+    }, {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Intermediate Surf Classes",
+      "description": "Take your skills to the next level with advanced techniques and wave reading instruction from certified professionals.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Escuela de Surf",
+        "url": "https://escueladesurf.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "85",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "courseMode": "in-person",
+      "duration": "PT2H"
+    }, {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Private Surf Lessons",
+      "description": "One-on-one instruction tailored to your specific needs and goals with personalized coaching approach.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Escuela de Surf",
+        "url": "https://escueladesurf.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "150",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "courseMode": "in-person",
+      "duration": "PT1H"
+    }]
+    </script>
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>

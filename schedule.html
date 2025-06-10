@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View our surf class schedule and book your preferred time slot. Morning and afternoon classes available daily.">
-    <meta name="keywords" content="surf class schedule, surf lessons schedule, book surf class, surf booking">
-    <title>Class Schedule - Escuela de Surf</title>
+    <meta name="description" content="View our comprehensive surf class schedule and book your preferred time slot at Escuela de Surf. Morning and afternoon classes available daily with flexible booking options.">
+    <meta name="keywords" content="surf class schedule, surf lessons schedule, book surf class, surf booking, morning surf classes, afternoon surf lessons, private surf instruction, weekly schedule">
+    <meta name="author" content="Escuela de Surf">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Surf Class Schedule & Booking - Escuela de Surf">
+    <meta property="og:description" content="View our surf class schedule and book your preferred time slot. Morning and afternoon classes available daily with professional instructors.">
+    <meta property="og:image" content="/images/og-surf-schedule.jpg">
+    <meta property="og:url" content="https://escueladesurf.com/schedule.html">
+    <meta property="og:site_name" content="Escuela de Surf">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@escueladesurf">
+    <meta name="twitter:title" content="Surf Class Schedule & Booking - Escuela de Surf">
+    <meta name="twitter:description" content="View our surf class schedule and book your preferred time slot. Morning and afternoon classes available daily.">
+    <meta name="twitter:image" content="/images/twitter-surf-schedule.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://escueladesurf.com/schedule.html">
+    
+    <title>Surf Class Schedule & Booking - Escuela de Surf</title>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
     
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,114 +43,213 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Escuela de Surf</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="classes.html">Classes</a></li>
-                    <li><a href="instructors.html">Instructors</a></li>
-                    <li><a href="schedule.html" class="active">Schedule</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" aria-label="Escuela de Surf - Go to homepage">Escuela de Surf</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <ul role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="classes.html" role="menuitem">Classes</a></li>
+                        <li role="none"><a href="instructors.html" role="menuitem">Instructors</a></li>
+                        <li role="none"><a href="schedule.html" class="active" role="menuitem" aria-current="page">Schedule</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container">
-            <h1>Class Schedule</h1>
-            <p>Find the perfect time to catch your wave</p>
-        </div>
+        </nav>
     </header>
 
-    <main>
-        <section>
+    <!-- Main Content -->
+    <main id="main-content" role="main" tabindex="-1">
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
             <div class="container">
-                <h2>Weekly Schedule</h2>
+                <h1 id="page-title">Class Schedule</h1>
+                <p class="page-description">Find the perfect time to catch your wave with our flexible scheduling options</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="schedule-title">
+            <div class="container">
+                <h2 id="schedule-title">Weekly Class Schedule</h2>
+                <p>All classes include equipment rental, safety briefing, and professional instruction. Classes are weather dependent and may be rescheduled for safety.</p>
+                
                 <div class="features-grid">
-                    <div class="card">
+                    <article class="card" itemscope itemtype="https://schema.org/Event">
                         <div class="card-body">
-                            <h3>Morning Classes</h3>
-                            <p>Monday - Friday: 7:00 AM - 9:00 AM</p>
-                            <p>Saturday - Sunday: 8:00 AM - 10:00 AM</p>
-                            <a href="#booking-form" class="btn btn-outline-primary">Book Morning Class</a>
+                            <h3 itemprop="name">Morning Surf Classes</h3>
+                            <div itemprop="startDate" content="07:00">
+                                <p><strong>Weekdays:</strong> Monday - Friday, 7:00 AM - 9:00 AM</p>
+                                <p><strong>Weekends:</strong> Saturday - Sunday, 8:00 AM - 10:00 AM</p>
+                            </div>
+                            <div itemprop="description">
+                                <p><strong>Duration:</strong> 2 hours</p>
+                                <p><strong>Group Size:</strong> Maximum 6 students</p>
+                                <p><strong>Price:</strong> $75 per person</p>
+                            </div>
+                            <a href="#booking-form" 
+                               class="btn btn-outline-primary" 
+                               aria-label="Book a morning surf class">
+                               Book Morning Class
+                            </a>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    
+                    <article class="card" itemscope itemtype="https://schema.org/Event">
                         <div class="card-body">
-                            <h3>Afternoon Classes</h3>
-                            <p>Monday - Friday: 2:00 PM - 4:00 PM</p>
-                            <p>Saturday - Sunday: 3:00 PM - 5:00 PM</p>
-                            <a href="#booking-form" class="btn btn-outline-primary">Book Afternoon Class</a>
+                            <h3 itemprop="name">Afternoon Surf Classes</h3>
+                            <div itemprop="startDate" content="14:00">
+                                <p><strong>Weekdays:</strong> Monday - Friday, 2:00 PM - 4:00 PM</p>
+                                <p><strong>Weekends:</strong> Saturday - Sunday, 3:00 PM - 5:00 PM</p>
+                            </div>
+                            <div itemprop="description">
+                                <p><strong>Duration:</strong> 2 hours</p>
+                                <p><strong>Group Size:</strong> Maximum 6 students</p>
+                                <p><strong>Price:</strong> $75 per person</p>
+                            </div>
+                            <a href="#booking-form" 
+                               class="btn btn-outline-primary" 
+                               aria-label="Book an afternoon surf class">
+                               Book Afternoon Class
+                            </a>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    
+                    <article class="card" itemscope itemtype="https://schema.org/Event">
                         <div class="card-body">
-                            <h3>Private Lessons</h3>
-                            <p>Available by appointment</p>
-                            <p>Contact us to schedule</p>
-                            <a href="#booking-form" class="btn btn-outline-primary">Book Private Lesson</a>
+                            <h3 itemprop="name">Private Surf Lessons</h3>
+                            <div itemprop="description">
+                                <p><strong>Availability:</strong> By appointment, 7 days a week</p>
+                                <p><strong>Duration:</strong> 1-3 hours (customizable)</p>
+                                <p><strong>Group Size:</strong> 1-3 students maximum</p>
+                                <p><strong>Price:</strong> $150 per hour</p>
+                            </div>
+                            <a href="#booking-form" 
+                               class="btn btn-outline-primary" 
+                               aria-label="Book a private surf lesson">
+                               Book Private Lesson
+                            </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="bg-light">
+        <section class="bg-light" aria-labelledby="booking-title">
             <div class="container">
-                <h2>Book Your Class</h2>
-                <form id="booking-form" class="card">
+                <h2 id="booking-title">Book Your Surf Class</h2>
+                <p>Ready to start your surfing adventure? Fill out the form below to reserve your spot. We'll confirm your booking within 24 hours.</p>
+                
+                <form id="booking-form" class="card" novalidate aria-labelledby="booking-form-title">
                     <div class="card-body">
+                        <h3 id="booking-form-title" class="sr-only">Class Booking Form</h3>
+                        
                         <div class="form-group">
-                            <label for="booking-name">Name</label>
-                            <input type="text" id="booking-name" name="name" class="form-control" required placeholder="Enter your full name">
+                            <label for="booking-name">Full Name <span class="required" aria-label="required">*</span></label>
+                            <input type="text" 
+                                   id="booking-name" 
+                                   name="name" 
+                                   class="form-control" 
+                                   required 
+                                   aria-describedby="name-help name-error"
+                                   autocomplete="name"
+                                   placeholder="Enter your full name">
+                            <span id="name-help" class="form-help">Please enter your complete first and last name</span>
+                            <span id="name-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="booking-email">Email</label>
-                            <input type="email" id="booking-email" name="email" class="form-control" required placeholder="Enter your email address">
+                            <label for="booking-email">Email Address <span class="required" aria-label="required">*</span></label>
+                            <input type="email" 
+                                   id="booking-email" 
+                                   name="email" 
+                                   class="form-control" 
+                                   required 
+                                   aria-describedby="email-help email-error"
+                                   autocomplete="email"
+                                   placeholder="Enter your email address">
+                            <span id="email-help" class="form-help">We'll send your booking confirmation to this email</span>
+                            <span id="email-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="booking-date">Preferred Date</label>
-                            <input type="date" id="booking-date" name="date" class="form-control" required>
+                            <label for="booking-date">Preferred Date <span class="required" aria-label="required">*</span></label>
+                            <input type="date" 
+                                   id="booking-date" 
+                                   name="date" 
+                                   class="form-control" 
+                                   required 
+                                   aria-describedby="date-help date-error">
+                            <span id="date-help" class="form-help">Select your preferred class date (subject to availability)</span>
+                            <span id="date-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="booking-class">Class Type</label>
-                            <select id="booking-class" name="class-type" class="form-control" required>
-                                <option value="" disabled selected>Select a class</option>
-                                <option value="beginner">Beginner</option>
-                                <option value="intermediate">Intermediate</option>
-                                <option value="private">Private Lesson</option>
+                            <label for="booking-class">Class Type <span class="required" aria-label="required">*</span></label>
+                            <select id="booking-class" 
+                                    name="class-type" 
+                                    class="form-control" 
+                                    required 
+                                    aria-describedby="class-help class-error">
+                                <option value="" disabled selected>Select a class type</option>
+                                <option value="beginner-morning">Beginner - Morning Class ($75)</option>
+                                <option value="beginner-afternoon">Beginner - Afternoon Class ($75)</option>
+                                <option value="intermediate-morning">Intermediate - Morning Class ($85)</option>
+                                <option value="intermediate-afternoon">Intermediate - Afternoon Class ($85)</option>
+                                <option value="private">Private Lesson ($150/hour)</option>
                             </select>
+                            <span id="class-help" class="form-help">Choose the class type that matches your skill level and preferred time</span>
+                            <span id="class-error" class="form-error" role="alert" aria-live="polite"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary">Book Now</button>
+                        
+                        <div class="form-group">
+                            <label for="booking-notes">Additional Notes (Optional)</label>
+                            <textarea id="booking-notes" 
+                                      name="notes" 
+                                      class="form-control" 
+                                      rows="3" 
+                                      aria-describedby="notes-help"
+                                      placeholder="Any special requests or questions?"></textarea>
+                            <span id="notes-help" class="form-help">Let us know if you have any special requirements or questions</span>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="btn btn-primary" 
+                                aria-describedby="submit-help">
+                            Reserve My Spot
+                        </button>
+                        <span id="submit-help" class="form-help">Your booking request will be confirmed within 24 hours</span>
                     </div>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
                     <h5>Escuela de Surf</h5>
                     <p>Learn to surf with the best instructors in a safe and fun environment.</p>
+                    <p>Email: <a href="mailto:info@escueladesurf.com" aria-label="Send email to Escuela de Surf">info@escueladesurf.com</a></p>
+                    <p>Phone: <a href="tel:+11234567890" aria-label="Call Escuela de Surf">(123) 456-7890</a></p>
                 </div>
                 <div class="footer-links">
                     <h5>Quick Links</h5>
                     <ul>
                         <li><a href="classes.html">Classes</a></li>
                         <li><a href="instructors.html">Instructors</a></li>
-                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="schedule.html" aria-current="page">Schedule</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -131,6 +260,102 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data for Events/Schedule -->
+    <script type="application/ld+json">
+    [{
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Morning Surf Classes",
+      "description": "Professional surf instruction for all levels in small groups. Includes equipment rental and safety briefing.",
+      "startDate": "2024-01-01T07:00:00",
+      "endDate": "2024-12-31T09:00:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Escuela de Surf",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Beach Road",
+          "addressLocality": "Coastal City",
+          "addressRegion": "CA",
+          "postalCode": "90210"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Escuela de Surf",
+        "url": "https://escueladesurf.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "75",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }, {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Afternoon Surf Classes",
+      "description": "Professional surf instruction for all levels in small groups. Includes equipment rental and safety briefing.",
+      "startDate": "2024-01-01T14:00:00",
+      "endDate": "2024-12-31T16:00:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Escuela de Surf",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Beach Road",
+          "addressLocality": "Coastal City",
+          "addressRegion": "CA",
+          "postalCode": "90210"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Escuela de Surf",
+        "url": "https://escueladesurf.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "75",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }, {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Private Surf Lessons",
+      "description": "One-on-one or small group surf instruction tailored to your specific needs and goals. Customizable duration and scheduling.",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Escuela de Surf",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Beach Road",
+          "addressLocality": "Coastal City",
+          "addressRegion": "CA",
+          "postalCode": "90210"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Escuela de Surf",
+        "url": "https://escueladesurf.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "150",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }]
+    </script>
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>

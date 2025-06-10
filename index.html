@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional surf school offering lessons for all levels. Learn to surf with certified instructors in a safe and fun environment.">
-    <meta name="keywords" content="surf school, surf lessons, surfing, surf classes, surf instructors, beach, ocean">
+    <meta name="description" content="Professional surf school offering lessons for all levels. Learn to surf with certified instructors in a safe and fun environment. Expert coaching, equipment provided.">
+    <meta name="keywords" content="surf school, surf lessons, surfing, surf classes, surf instructors, beach, ocean, professional coaching, beginner surfing">
+    <meta name="author" content="Escuela de Surf">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Escuela de Surf - Learn to Surf with Professional Instructors">
+    <meta property="og:description" content="Professional surf school offering lessons for all levels. Learn to surf with certified instructors in a safe and fun environment.">
+    <meta property="og:image" content="/images/og-surf-school.jpg">
+    <meta property="og:url" content="https://escueladesurf.com/">
+    <meta property="og:site_name" content="Escuela de Surf">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@escueladesurf">
+    <meta name="twitter:title" content="Escuela de Surf - Learn to Surf with Professional Instructors">
+    <meta name="twitter:description" content="Professional surf school offering lessons for all levels. Learn to surf with certified instructors in a safe and fun environment.">
+    <meta name="twitter:image" content="/images/twitter-surf-school.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://escueladesurf.com/">
     
     <title>Escuela de Surf - Learn to Surf with Professional Instructors</title>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
     
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,59 +45,76 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2IDJDOOKAiJIzIDMAEyOCBzQY8uMS04IDE0LThjOOKAiJM0IDI4IDE0IDI4eTggMCAxNC04YzYuMSAwIDgtMy4zIDgtOCAwLTQuNi0xLjktOC0xMC04aC00Yy04IDAtOCAzLTggNiAwIDMgMCA2IDEwIDZ6IiBmaWxsPSIjMWEgMWE4IQMIgc3Ryb2tlPSJub25lIi8+PC9zdmc+">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Escuela de Surf</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="classes.html">Classes</a></li>
-                    <li><a href="instructors.html">Instructors</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" aria-label="Escuela de Surf - Go to homepage">Escuela de Surf</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <ul role="menubar">
+                        <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Home</a></li>
+                        <li role="none"><a href="classes.html" role="menuitem">Classes</a></li>
+                        <li role="none"><a href="instructors.html" role="menuitem">Instructors</a></li>
+                        <li role="none"><a href="schedule.html" role="menuitem">Schedule</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section" style="background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('images/unsplash__CFv3bntQlQ.jpg');">
-        <div class="container">
-            <h1 class="animate-on-scroll">Ride the Perfect Wave</h1>
-            <p class="animate-on-scroll">Learn to surf with professional instructors in a safe and fun environment</p>
-            <a href="classes.html" class="btn btn-primary animate-on-scroll">Start Your Journey</a>
-        </div>
+        </nav>
     </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero-section" style="background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('images/unsplash__CFv3bntQlQ.jpg');" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title" class="animate-on-scroll">Ride the Perfect Wave</h1>
+                <p class="animate-on-scroll">Learn to surf with professional instructors in a safe and fun environment</p>
+                <a href="classes.html" class="btn btn-outline-primary animate-on-scroll" aria-label="Explore our surf classes and start your surfing journey">Start Your Journey</a>
+
+            </div>
+        </section>
 
     <!-- Features Section -->
     <section>
         <div class="container">
             <div class="features-grid">
                 <div class="card animate-on-scroll">
+                    <div class="card-header">
+                        <div class="card-icon" aria-hidden="true">🏄‍♂️</div>
+                        <div class="card-title">Our Classes</div>
+                    </div>
                     <div class="card-body">
-                        <h3>Our Classes</h3>
-                        <p>Discover our range of surf classes for all skill levels, from beginners to advanced surfers.</p>
-                        <a href="classes.html" class="btn btn-outline-primary">View Classes</a>
+                        <p class="card-description">Discover our range of surf classes for all skill levels, from beginners to advanced surfers.</p>
+                        <a href="classes.html" class="btn btn-outline-primary" aria-label="View our surf classes">View Classes</a>
                     </div>
                 </div>
                 <div class="card animate-on-scroll">
+                    <div class="card-header">
+                        <div class="card-icon" aria-hidden="true">👨‍🏫</div>
+                        <div class="card-title">Expert Instructors</div>
+                    </div>
                     <div class="card-body">
-                        <h3>Expert Instructors</h3>
-                        <p>Learn from our team of certified professional surf instructors with years of experience.</p>
-                        <a href="instructors.html" class="btn btn-outline-primary">Meet Our Team</a>
+                        <p class="card-description">Learn from our team of certified professional surf instructors with years of experience.</p>
+                        <a href="instructors.html" class="btn btn-outline-primary" aria-label="Meet our surf instructors">Meet Our Team</a>
                     </div>
                 </div>
                 <div class="card animate-on-scroll">
+                    <div class="card-header">
+                        <div class="card-icon" aria-hidden="true">📅</div>
+                        <div class="card-title">Class Schedule</div>
+                    </div>
                     <div class="card-body">
-                        <h3>Class Schedule</h3>
-                        <p>Check our flexible class schedules and book your preferred time slot.</p>
-                        <a href="schedule.html" class="btn btn-outline-primary">View Schedule</a>
+                        <p class="card-description">Check our flexible class schedules and book your preferred time slot.</p>
+                        <a href="schedule.html" class="btn btn-outline-primary" aria-label="View class schedule">View Schedule</a>
                     </div>
                 </div>
             </div>
@@ -177,15 +223,16 @@
             </div>
         </div>
     </section>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
                     <h5>Escuela de Surf</h5>
                     <p>Learn to surf with the best instructors in a safe and fun environment.</p>
-                    <p>Email: info@escueladesurf.com</p>
-                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: <a href="mailto:info@escueladesurf.com" aria-label="Send email to Escuela de Surf">info@escueladesurf.com</a></p>
+                    <p>Phone: <a href="tel:+11234567890" aria-label="Call Escuela de Surf">(123) 456-7890</a></p>
                 </div>
                 <div class="footer-links">
                     <h5>Quick Links</h5>
@@ -228,6 +275,79 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Escuela de Surf",
+      "description": "Professional surf school offering lessons for all levels with certified instructors",
+      "url": "https://escueladesurf.com",
+      "telephone": "+1-123-456-7890",
+      "email": "info@escueladesurf.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Beach Road",
+        "addressLocality": "Coastal City",
+        "addressRegion": "CA",
+        "postalCode": "90210",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "34.0522",
+        "longitude": "-118.2437"
+      },
+      "openingHours": [
+        "Mo-Su 07:00-19:00"
+      ],
+      "priceRange": "$$",
+      "sport": "Surfing",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Do I need to know how to swim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, basic swimming skills are required for all surf lessons. You should be comfortable swimming in open water and able to swim at least 50 meters without assistance."
+        }
+      }, {
+        "@type": "Question", 
+        "name": "What should I bring to my lesson?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend bringing a swimsuit, towel, sunscreen, water, and a change of clothes. All surf equipment (board, wetsuit if needed) is provided as part of your lesson."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long are the lessons?", 
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard lessons are 2 hours long, which includes safety instruction, land practice, and water time. Private lessons can be customized in length based on your preferences."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is there an age limit for lessons?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Our standard group lessons are appropriate for ages 8 and up. For younger children (5-7), we offer special kids' classes with a higher instructor-to-student ratio. There is no upper age limit - you're never too old to learn to surf!"
+        }
+      }]
+    }
+    </script>
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
